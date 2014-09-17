@@ -12,7 +12,12 @@ gem 'sqlite3'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
+group :development do
+  gem 'quiet_assets'
+end
+
 group :test do
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
+  gem 'launchy'
 end
