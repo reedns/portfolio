@@ -13,6 +13,6 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
 group :test do
-  gem 'minispec'
-  gem 'capybara'
+  gem 'minitest-rails'
+  gem 'minitest-rails-capybara'
 end
