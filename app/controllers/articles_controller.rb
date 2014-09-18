@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :set_article, only: [:show, :edit, :update]
+  before_action :set_article, only: [:show, :edit, :update, :destroy]
 
   def index
     @articles = Article.all
@@ -35,7 +35,11 @@ class ArticlesController < ApplicationController
       flash[:error] = "Please fix errors below."
       render :edit
     end
+  end
 
+  def destroy
+    @article.destroy
+    redirect_to articles_path
   end
 
   private
