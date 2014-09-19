@@ -1,4 +1,5 @@
 ENV["RAILS_ENV"] = "test"
+puts Rails.env
 require File.expand_path("../../config/environment", __FILE__)
 require "rails/test_help"
 require "minitest/rails"
@@ -13,6 +14,7 @@ class ActiveSupport::TestCase
   # Note: You'll currently still have to declare fixtures explicitly in integration tests
   # -- they do not yet inherit this setting
   fixtures :all
-
   # Add more helper methods to be used by all tests here...
 end
+
+Capybara.ignore_hidden_elements = false
