@@ -5,10 +5,9 @@ feature 'creating and article' do
     visit new_article_path
 
     fill_in 'Title', with: articles(:article).title
-    fill_in 'Author', with: articles(:article).author
-    fill_in 'Content', with: articles(:article).content
+    fill_in 'Body', with: articles(:article).body
     click_button 'Create'
 
-    page.must_have_content(articles(:article).content)
+    page.must_have_content(articles(:article).body)
   end
 end
