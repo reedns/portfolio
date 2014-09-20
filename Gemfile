@@ -13,6 +13,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'rubocop'
 gem 'foundation-rails', '5.4.0'
 gem 'pg'
+gem 'figaro'
 
 group :development do
   gem 'quiet_assets'

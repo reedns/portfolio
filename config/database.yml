@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: blog_development
+  database: portfolio_development
   pool: 5
   username: reedns
   password:
@@ -9,7 +9,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: blog_test
+  database: portfolio_test
   pool: 5
   username: reedns
   password:
