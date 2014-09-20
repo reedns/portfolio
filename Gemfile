@@ -18,12 +18,17 @@ group :development do
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'spring'
+  gem 'better_errors'
 end
 
-
+group :production do
+  gem 'rails_12factor'
+end
 
 group :test do
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
   gem 'launchy'
+  gem 'poltergeist'
+  gem 'vcr'
 end

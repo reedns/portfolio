@@ -17,4 +17,11 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
 end
 
+class FeatureSpec < MiniTest::Spec
+  require "capybara/poltergeist"
+  include Capybara::DSL
+  Capybara.javascript_driver = :poltergeist
+  register_spec_type(/page$/, self)
+end
+
 Capybara.ignore_hidden_elements = false
