@@ -6,5 +6,11 @@
         - @article.errors.full_messages.each do |msg|
           %li= msg
 
-  .actions
-    = f.submit 'Save'
+  .actions.row
+    .large-6
+      = f.label :title
+      = f.text_field :title
+    .large-8
+      = f.label "Content"
+      = f.text_area :body, rows: 15
+    = f.submit 'Save', class: "button small radius"
