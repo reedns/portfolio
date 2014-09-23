@@ -1,0 +1,13 @@
+= form_for(@project) do |f|
+  = render 'shared/errors', object: @project
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :technologies_used
+    %br/
+    = f.text_area :technologies_used
+  .actions
+    = f.submit "Save"
+
+= link_to 'Cancel', :back
