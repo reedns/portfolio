@@ -19,7 +19,7 @@ feature 'As the site owner, I want to edit a portfolio item so that I can update
     fill_in 'Name', with: nil
     click_button 'Save'
 
-    page.must_have_content 'Please fix errors below'
+    page.must_have_content '1 error prohibited this article from being saved:'
     page.must_have_content 'Edit Project'
   end
 end
