@@ -8,15 +8,12 @@ class ArticlesController < ApplicationController
   def show
   end
 
-
   def new
     @article = Article.new
   end
 
-
   def edit
   end
-
 
   def create
     @article = Article.new(article_params)

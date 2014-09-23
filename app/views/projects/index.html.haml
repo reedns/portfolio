@@ -1,0 +1,16 @@
+%h1 Blog
+- @projects.each do |project|
+  .row
+    .small-9.columns
+      .panel.radius
+        %h3 Name: #{ link_to project.name, project_path(project) }
+        %p= project.technologies_used
+        = link_to 'Show', project_path(project)
+        \|
+        = link_to 'Edit', edit_project_path(project)
+        \|
+        = link_to 'Destroy', project, method: :delete, data: { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Project', new_project_path
