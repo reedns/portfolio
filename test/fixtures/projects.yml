@@ -1,3 +1,9 @@
-project:
-  name: Cool App
-  technologies_used: Ruby on Rails
+portfolio:
+  name: How meta
+  technologies_used: Ruby, Rails, Zurb, Javascript
+
+freelance:
+  name: Barnyard Cereal
+  technologies_used: Ruby, Rails, Farmville API, Automilker
+
+

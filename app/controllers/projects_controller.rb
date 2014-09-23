@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
-  before_action :set_project, only: [:show, :edit, :update]
+  before_action :set_project, only: [:show, :edit, :update, :destroy]
+
   def index
     @projects = Project.all
   end
@@ -36,6 +37,11 @@ class ProjectsController < ApplicationController
       flash[:notice] = 'Please fix errors below.'
       render :edit
     end
+  end
+
+  def destroy
+    @project.destroy
+    redirect_to projects_path
   end
 
   private
