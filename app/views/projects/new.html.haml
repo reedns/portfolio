@@ -1,6 +1,7 @@
 %h1 New project
 
 =form_for(@project) do |f|
+  = render 'shared/errors', object: @project
   .field
     = f.label :name
     = f.text_field :name

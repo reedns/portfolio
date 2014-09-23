@@ -1,10 +1,10 @@
-ENV["RAILS_ENV"] = "test"
+ENV['RAILS_ENV'] = 'test'
 # puts Rails.env
-require File.expand_path("../../config/environment", __FILE__)
-require "rails/test_help"
-require "minitest/rails"
-require "minitest/rails/capybara"
-require "minitest/pride"
+require File.expand_path('../../config/environment', __FILE__)
+require 'rails/test_help'
+require 'minitest/rails'
+require 'minitest/rails/capybara'
+require 'minitest/pride'
 
 class ActiveSupport::TestCase
   ActiveRecord::Migration.check_pending!
@@ -18,7 +18,7 @@ class ActiveSupport::TestCase
 end
 
 class FeatureSpec < MiniTest::Spec
-  require "capybara/poltergeist"
+  require 'capybara/poltergeist'
   include Capybara::DSL
   Capybara.javascript_driver = :poltergeist
   register_spec_type(/page$/, self)
