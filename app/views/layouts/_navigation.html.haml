@@ -1,0 +1,26 @@
+-# navigation styled for Zurb Foundation 5
+-# the syntax for data-topbar may need to change for Zurb Foundation 5
+ #header-landing{"data-magellan-destination" => "home"}
+        .fixed.sticky
+          %nav#nav-menu.top-bar{"data-magellan-expedition" => "fixed", "data-topbar" => "", :role => "navigation"}
+            %ul.title-area
+              %li.name
+                %h1
+                  %a{:href => "index.html"}
+                    %i.fa.fa-bullseye
+                    AgencyNYC.
+              %li.toggle-topbar.menu-icon
+                %a{:href => "#"}
+                  %span Menu
+            %section#top-main-nav.top-bar-section.menus
+              %ul.right.scroll-nav
+                %li.active{"data-magellan-arrival" => "home"}
+                  %a{:href => "#top"} Home
+                %li{"data-magellan-arrival" => "services"}
+                  %a{:href => "#services"} Services
+                %li{"data-magellan-arrival" => "portfolio"}
+                  %a{:href => "#portfolio"} Portfolio
+                %li{"data-magellan-arrival" => "team"}
+                  %a{:href => "#team"} Team
+                %li{"data-magellan-arrival" => "contact"}
+                  %a{:href => "#contact"} Contact

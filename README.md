@@ -1,4 +1,17 @@
-I started with a feature spec for the welcome_page.  I created the route for the welcome#index page. I created a welcome controller with an empty index action because there is no model or database set up. Then I created the index view template and aligned the text in the appllication.css file in the asset pipeline.
+Portfolio
+
+This is an project for CodeFellows Ruby on Rails Dev Accelerator.  The app displays a blog and projects that I have created.
+
+Methodology:
+
+This app was developed using BDD by starting with user stories and then building out the app from the test errors.
+You can see the user stories that have been used so far on the issues page in the app repo.
 
 
-![welcome](https://www.dl.dropbox.com/s/pe0b2bohfw9f96p/Screenshot%202014-09-16%2019.57.59.png?dl=0)
+
+![welcome](https://www.dropbox.com/s/cxh9020xms69xdw/Screenshot%202014-09-23%2012.07.39.png)
+
+Screenshot of the articles index:
+
+![index](http://prntscr.com/4nupa6)
+

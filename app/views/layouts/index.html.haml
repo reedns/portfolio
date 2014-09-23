@@ -1,0 +1,635 @@
+!!!
+%html
+  %head
+    %meta{:charset => "utf-8"}
+      %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}
+        %meta{:content => "", :name => "description"}
+          %meta{:content => "", :name => "keywords"}
+            %meta{:content => "Jay Ginete", :name => "author"}
+              %title AgencyNYC - Responsive Landing Page
+              / CSS
+              %link{:href => "assets/css/normalize.css", :rel => "stylesheet"}
+                %link{:href => "assets/css/slick/style.css", :rel => "stylesheet"}
+                  %link{:href => "assets/css/animate.min.css", :rel => "stylesheet"}
+                    %link{:href => "assets/css/font-awesome.min.css", :rel => "stylesheet"}
+                      %link{:href => "assets/lib/hovericon/css/component.css", :rel => "stylesheet"}
+                        %link{:href => "assets/css/foundation.css", :rel => "stylesheet"}
+                          %link{:href => "assets/css/style.css", :rel => "stylesheet"}
+                            %link{:href => "assets/css/style-responsive.css", :rel => "stylesheet"}
+                              / HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+                              / WARNING: Respond.js doesn't work if you view the page via file://
+                              /[if lt IE 9]
+                                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                                <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  %body#top.tooltips
+    .wrapper
+      /
+        \===========================================
+        BEGIN HEADER SECTION
+        \===========================================
+      #header-landing{"data-magellan-destination" => "home"}
+        .fixed.sticky
+          %nav#nav-menu.top-bar{"data-magellan-expedition" => "fixed", "data-topbar" => "", :role => "navigation"}
+            %ul.title-area
+              %li.name
+                %h1
+                  %a{:href => "index.html"}
+                    %i.fa.fa-bullseye
+                    AgencyNYC.
+              %li.toggle-topbar.menu-icon
+                %a{:href => "#"}
+                  %span Menu
+            %section#top-main-nav.top-bar-section.menus
+              %ul.right.scroll-nav
+                %li.active{"data-magellan-arrival" => "home"}
+                  %a{:href => "#top"} Home
+                %li{"data-magellan-arrival" => "services"}
+                  %a{:href => "#services"} Services
+                %li{"data-magellan-arrival" => "portfolio"}
+                  %a{:href => "#portfolio"} Portfolio
+                %li{"data-magellan-arrival" => "team"}
+                  %a{:href => "#team"} Team
+                %li{"data-magellan-arrival" => "contact"}
+                  %a{:href => "#contact"} Contact
+        / HEADER SECTION CONTENT
+        .awesome-slogan
+          %h2
+            Your
+            %span Awesome
+            Text
+            %span Goes Here
+          %h4
+            This theme is
+            %span inspired
+            by my visit to the
+            %span City of New York
+          %p FOLLOW US
+          .clear
+          .social-icons
+            %a{"data-toggle" => "tooltip", :href => "#fakelink", :title => "Facebook"}
+              %img{:alt => "Facebook icon", :src => "assets/img/social-icons/facebook.png"}/
+            %a{"data-toggle" => "tooltip", :href => "#fakelink", :title => "Github"}
+              %img{:alt => "Github icon", :src => "assets/img/social-icons/github.png"}/
+            %a{"data-toggle" => "tooltip", :href => "#fakelink", :title => "Google+"}
+              %img{:alt => "Gplus icon", :src => "assets/img/social-icons/gplus.png"}/
+            %a{"data-toggle" => "tooltip", :href => "#fakelink", :title => "Liked In"}
+              %img{:alt => "Linkedin icon", :src => "assets/img/social-icons/likedin.png"}/
+            %a{"data-toggle" => "tooltip", :href => "#fakelink", :title => "Tumblr"}
+              %img{:alt => "Tumblr icon", :src => "assets/img/social-icons/tumblr.png"}/
+            %a{"data-toggle" => "tooltip", :href => "#fakelink", :title => "Twitter"}
+              %img{:alt => "Twitter icon", :src => "assets/img/social-icons/twitter.png"}/
+            %a{"data-toggle" => "tooltip", :href => "#fakelink", :title => "Vimeo"}
+              %img{:alt => "Vimeo icon", :src => "assets/img/social-icons/vimeo.png"}/
+            %a{"data-toggle" => "tooltip", :href => "#fakelink", :title => "Youtube"}
+              %img{:alt => "Youtube icon", :src => "assets/img/social-icons/youtube.png"}/
+      /
+        \===========================================
+        END HEADER SECTION
+        \===========================================
+      / SEECTION THEME COLOR
+      .section-theme-landing
+      / END SECTION THEME COLOR
+      /
+        \===========================================
+        BEGIN SERVICES SECTION
+        \===========================================
+      #services.section-page-landing.section-grey{"data-magellan-destination" => "services"}
+        .inner-section.row
+          .container.small-12.medium-12.large-12.column
+            %h2.text-center Our Services
+            / BEGIN SERVICES DESCRIPTION
+            %h4.text-center
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+              euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+              minim veniam, quis nostrud exerci tation.
+            .hi-icon-effect-1.hi-icon-effect-1a.row
+              .large-3.column
+                .the-box-landing.the-box-transparent.text-center
+                  %h4 WEB DESIGN
+                  %a.hi-icon.hi-icon-screen{:href => "#fakelink"} Web Design
+              .large-3.column
+                .the-box-landing.the-box-transparent.text-center
+                  %h4 UI DESIGN
+                  %a.hi-icon.hi-icon-images{:href => "#fakelink"} UI Design
+              .large-3.column
+                .the-box-landing.the-box-transparent.text-center
+                  %h4 MOBILE APPS
+                  %a.hi-icon.hi-icon-mobile{:href => "#fakelink"} Mobile Apps
+              .large-3.column
+                .the-box-landing.the-box-transparent.text-center
+                  %h4 WEB HOSTING
+                  %a.hi-icon.hi-icon-archive{:href => "#fakelink"} Web Hosting
+            %hr/
+            %h2.text-center What They Say About Us?
+            / BEGIN TESTIMONIAL CAROUSEL
+            #carousel-testimonial.carousel-landing.carousel.carousel-testimonial
+              .testimonial-icon
+                %span.fa-stack.fa-lg
+                  %i.fa.fa-circle.fa-stack-2x
+                  %i.fa.fa-comments-o.fa-stack-1x.fa-inverse
+              / Wrapper for slides
+              .carousel-inner
+                .testimonial-inner
+                  %h5
+                    "
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi
+                    "
+                  %h4.testimonial-name Jessica Rice - San Francisco, USA
+                  .testimonial-avatar
+                    %img.img-circle{:alt => "Avatar", :src => "assets/img/avatar/avatar.jpg"}
+                .testimonial-inner
+                  %h5
+                    "
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi
+                    "
+                  %h4.testimonial-name Sam Bason - Tokyo, Japan
+                  .testimonial-avatar
+                    %img.img-circle{:alt => "Avatar", :src => "assets/img/avatar/avatar.jpg"}
+                .testimonial-inner
+                  %h5
+                    "
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi
+                    "
+                  %h4.testimonial-name Sara Curtis - London, UK
+                  .testimonial-avatar
+                    %img.img-circle{:alt => "Avatar", :src => "assets/img/avatar/avatar.jpg"}
+      /
+        \===========================================
+        END SERVICES SECTION
+        \===========================================
+      /
+        \===========================================
+        BEGIN PORTFOLIO SECTION
+        \===========================================
+      #portfolio.section-page-landing{"data-magellan-destination" => "portfolio"}
+        .inner-section
+          #Modals
+            #myModal.reveal-modal{"data-reveal" => ""}
+              .modal-content
+                .modal-header
+                  %a.close-reveal-modal ×
+                  %h4#myModalLabel.modal-title Project name
+                .modal-body
+                  %ul.small-block-grid-2
+                    %li
+                      %img.img-responsive{:alt => "Image portfolio", :src => "assets/img/image_small/image_wide001.jpg"}/
+                    %li
+                      %p.text-justify
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                        tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                      %p{:style => "text-justify"}
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                        ut laoreet dolore magna aliquam erat volutpat.
+                      %button.btn.btn-default.btn-teplok.btn-block Open Project page
+          .container.row
+            %h2.text-center Our Work
+            .portfolio-landing
+              %ul.button-group.filter-options.even-6
+                %li
+                  %a.button.active{"data-group" => "all"} All
+                %li
+                  %a.button{"data-group" => "web_design"} Web Design
+                %li
+                  %a.button{"data-group" => "ui_design"} UI Design
+                %li
+                  %a.button{"data-group" => "open_source"} Open source
+                %li
+                  %a.button{"data-group" => "frameworks"} Frameworks
+                %li
+                  %a.button{"data-group" => "community"} Community
+              / BEGIN PORTFOLIO GRID CONTENT
+              %ul#portfolio-grid.small-block-grid-2.medium-block-grid-2.large-block-grid-4
+                %li.picture-item{"data-groups" => "[\"ui_design\"]"}
+                  .overlay
+                    %h4 Project Name
+                    %p Short descriptions
+                    %p
+                      %a{"data-reveal-id" => "myModal", :href => "#"}
+                        %i.fa.fa-share
+                      %a{:href => "#fakelink"}
+                        %i.fa.fa-link
+                  %img{:alt => "Image portfolio", :src => "assets/img/image_small/image_small001.jpg"}
+                %li.picture-item{"data-groups" => "[\"ui_design\"]"}
+                  .overlay
+                    %h4 Project Name
+                    %p Short descriptions
+                    %p
+                      %a{"data-target" => "#myModal", "data-toggle" => "modal"}
+                        %i.fa.fa-share
+                      %a{:href => "#fakelink"}
+                        %i.fa.fa-link
+                  %img{:alt => "Image portfolio", :src => "assets/img/image_small/image_small002.jpg"}
+                %li.picture-item{"data-groups" => "[\"open_source\"]"}
+                  .overlay
+                    %h4 Project Name
+                    %p Short descriptions
+                    %p
+                      %a{"data-target" => "#myModal", "data-toggle" => "modal"}
+                        %i.fa.fa-share
+                      %a{:href => "#fakelink"}
+                        %i.fa.fa-link
+                  %img{:alt => "Image portfolio", :src => "assets/img/image_small/image_small003.jpg"}
+                %li.picture-item{"data-groups" => "[\"frameworks\"]"}
+                  .overlay
+                    %h4 Project Name
+                    %p Short descriptions
+                    %p
+                      %a{"data-target" => "#myModal", "data-toggle" => "modal"}
+                        %i.fa.fa-share
+                      %a{:href => "#fakelink"}
+                        %i.fa.fa-link
+                  %img{:alt => "Image portfolio", :src => "assets/img/image_small/image_small004.jpg"}
+                %li.picture-item{"data-groups" => "[\"web_design\"]"}
+                  .overlay
+                    %h4 Project Name
+                    %p Short descriptions
+                    %p
+                      %a{"data-target" => "#myModal", "data-toggle" => "modal"}
+                        %i.fa.fa-share
+                      %a{:href => "#fakelink"}
+                        %i.fa.fa-link
+                  %img{:alt => "Image portfolio", :src => "assets/img/image_small/image_small005.jpg"}
+                %li.picture-item{"data-groups" => "[\"open_source\"]"}
+                  .overlay
+                    %h4 Project Name
+                    %p Short descriptions
+                    %p
+                      %a{"data-target" => "#myModal", "data-toggle" => "modal"}
+                        %i.fa.fa-share
+                      %a{:href => "#fakelink"}
+                        %i.fa.fa-link
+                  %img{:alt => "Image portfolio", :src => "assets/img/image_small/image_small006.jpg"}
+                %li.picture-item{"data-groups" => "[\"open_source\"]"}
+                  .overlay
+                    %h4 Project Name
+                    %p Short descriptions
+                    %p
+                      %a{"data-target" => "#myModal", "data-toggle" => "modal"}
+                        %i.fa.fa-share
+                      %a{:href => "#fakelink"}
+                        %i.fa.fa-link
+                  %img{:alt => "Image portfolio", :src => "assets/img/image_small/image_small007.jpg"}
+                %li.picture-item{"data-groups" => "[\"community\"]"}
+                  .overlay
+                    %h4 Project Name
+                    %p Short descriptions
+                    %p
+                      %a{"data-target" => "#myModal", "data-toggle" => "modal"}
+                        %i.fa.fa-share
+                      %a{:href => "#fakelink"}
+                        %i.fa.fa-link
+                  %img{:alt => "Image portfolio", :src => "assets/img/image_small/image_small008.jpg"}
+                %li.picture-item{"data-groups" => "[\"web_design\"]"}
+                  .overlay
+                    %h4 Project Name
+                    %p Short descriptions
+                    %p
+                      %a{"data-target" => "#myModal", "data-toggle" => "modal"}
+                        %i.fa.fa-share
+                      %a{:href => "#fakelink"}
+                        %i.fa.fa-link
+                  %img{:alt => "Image portfolio", :src => "assets/img/image_small/image_small009.jpg"}
+                %li.picture-item{"data-groups" => "[\"frameworks\"]"}
+                  .overlay
+                    %h4 Project Name
+                    %p Short descriptions
+                    %p
+                      %a{"data-target" => "#myModal", "data-toggle" => "modal"}
+                        %i.fa.fa-share
+                      %a{:href => "#fakelink"}
+                        %i.fa.fa-link
+                  %img{:alt => "Image portfolio", :src => "assets/img/image_small/image_small010.jpg"}
+                %li.picture-item{"data-groups" => "[\"community\"]"}
+                  .overlay
+                    %h4 Project Name
+                    %p Short descriptions
+                    %p
+                      %a{"data-target" => "#myModal", "data-toggle" => "modal"}
+                        %i.fa.fa-share
+                      %a{:href => "#fakelink"}
+                        %i.fa.fa-link
+                  %img{:alt => "Image portfolio", :src => "assets/img/image_small/image_small011.jpg"}
+                %li.picture-item{"data-groups" => "[\"open_source\"]"}
+                  .overlay
+                    %h4 Project Name
+                    %p Short descriptions
+                    %p
+                      %a{"data-target" => "#myModal", "data-toggle" => "modal"}
+                        %i.fa.fa-share
+                      %a{:href => "#fakelink"}
+                        %i.fa.fa-link
+                  %img{:alt => "Image portfolio", :src => "assets/img/image_small/image_small012.jpg"}
+                %li.shuffle__sizer
+      /
+        \===========================================
+        END PORTFOLIO SECTION
+        \===========================================
+      /
+        \===========================================
+        BEGIN TEAM SECTION
+        \===========================================
+      #team.section-page-landing.section-light-grey{"data-magellan-destination" => "team"}
+        .inner-section
+          .container
+            %h2.text-center Meet Our Team
+            .row
+              %ul.small-block-grid-2.medium-block-grid-3.large-block-grid-4
+                %li
+                  .the-box-landing.text-center.the-team-landing.full
+                    .ava-wrap
+                      .see-detail
+                      .button-link
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-facebook
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-twitter
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-google-plus
+                      %img{:alt => "Image team", :src => "assets/img/avatar/avatar.jpg"}
+                    .des
+                      %h3 Randy Gibson
+                      %h5 Art Director
+                %li
+                  .the-box-landing.text-center.the-team-landing.full
+                    .ava-wrap
+                      .see-detail
+                      .button-link
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-facebook
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-twitter
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-google-plus
+                      %img{:alt => "Image team", :src => "assets/img/avatar/avatar.jpg"}
+                    .des
+                      %h3 Sara Conner
+                      %h5 Human Resource
+                %li
+                  .the-box-landing.text-center.the-team-landing.full
+                    .ava-wrap
+                      .see-detail
+                      .button-link
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-facebook
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-twitter
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-google-plus
+                      %img{:alt => "Image team", :src => "assets/img/avatar/avatar.jpg"}
+                    .des
+                      %h3 Ben Franklin
+                      %h5 Developer
+                %li
+                  .the-box-landing.text-center.the-team-landing.full
+                    .ava-wrap
+                      .see-detail
+                      .button-link
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-facebook
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-twitter
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-google-plus
+                      %img{:alt => "Image team", :src => "assets/img/avatar/avatar.jpg"}
+                    .des
+                      %h3 John Smith
+                      %h5 Founder & CEO
+                %li
+                  .the-box-landing.text-center.the-team-landing.full
+                    .ava-wrap
+                      .see-detail
+                      .button-link
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-facebook
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-twitter
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-google-plus
+                      %img{:alt => "Image team", :src => "assets/img/avatar/avatar.jpg"}
+                    .des
+                      %h3 Jane Smith
+                      %h5 Marketing
+                %li
+                  .the-box-landing.text-center.the-team-landing.full
+                    .ava-wrap
+                      .see-detail
+                      .button-link
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-facebook
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-twitter
+                        %a{:href => "#fakelink"}
+                          %i.fa.fa-google-plus
+                      %img{:alt => "Image team", :src => "assets/img/avatar/avatar.jpg"}
+                    .des
+                      %h3 Steve Jones
+                      %h5 Developer
+              .col-md-9.col-sm-6
+                .the-box-landing.full.text-center.the-box-transparent
+                  %h2 We're hiring, join with us...
+                  %h4
+                    Mirum est notare quam littera gothica, quam nunc putamus parum
+                    claram, anteposuerit litterarum formas humanitatis per seacula
+                    quarta decima et quinta decima.
+                  %button.btn.btn-default.btn-teplok.btn-lg.btn-distance
+                    %i.fa.fa-cloud-upload
+                    Submit your application
+                  %p.text-danger *note : all in one zipped file
+      /
+        \===========================================
+        END TEAM SECTION
+        \===========================================
+      /
+        \===========================================
+        BEGIN CLIENT SECTION
+        \===========================================
+      #client.section-page-landing.section-grey
+        .inner-section
+          .container.text-center
+            %h2.text-center Our Clients
+            .clients.row
+              %ul.small-block-grid-6
+                %li
+                  %a{:href => "#fakelink"}
+                    %img{:alt => "Image client", :src => "assets/img/client-logo/google-logo.png"}/
+                %li
+                  %a{:href => "#fakelink"}
+                    %img{:alt => "Image client", :src => "assets/img/client-logo/wordpress-logo.png"}/
+                %li
+                  %a{:href => "#fakelink"}
+                    %img{:alt => "Image client", :src => "assets/img/client-logo/yahoo-logo.png"}/
+                %li
+                  %a{:href => "#fakelink"}
+                    %img{:alt => "Image client", :src => "assets/img/client-logo/marlboro-logo.png"}/
+                %li
+                  %a{:href => "#fakelink"}
+                    %img{:alt => "Image client", :src => "assets/img/client-logo/microsoft-logo.png"}/
+                %li
+                  %a{:href => "#fakelink"}
+                    %img{:alt => "Image client", :src => "assets/img/client-logo/nokia-logo.png"}/
+      /
+        \===========================================
+        END CLIENT SECTION
+        \===========================================
+      /
+        \===========================================
+        BEGIN QUOTE OF THE DAY SECTION
+        \===========================================
+      #quote.section-page-landing.section-transparent
+        .section-overlay
+          .inner-section
+            .container.text-center
+              .quote
+                %h1 "If you can't make it good at least make it look good"
+                %h3 - Bill Gates
+      /
+        \===========================================
+        END QUOTE OF THE DAY SECTION
+        \===========================================
+      /
+        \===========================================
+        BEGIN CONTACT SECTION
+        \===========================================
+      #contact.section-page-landing{"data-magellan-destination" => "contact"}
+        .inner-section
+          .row
+            %h2.text-center Get in Touch
+            .small-12.medium-9.large-9.column
+              .panel
+                %form#ContactForm.contact-form{:method => "post", :role => "form"}
+                  .row
+                    .large-6.column
+                      .row
+                        .large-12.column
+                          %label
+                            Your Name
+                            %input{:placeholder => "Your name", :type => "text"}/
+                      .row
+                        .large-12.column
+                          %div
+                            Your E-mail
+                            .row.collapse.prefix-radius
+                              .small-2.columns
+                                %span.prefix
+                                  %i.fa.fa-envelope
+                              .small-10.columns
+                                %input{:placeholder => "Enter Email", :type => "text"}
+                      .row
+                        .small-12.medium-12.large-12.column
+                          %label
+                            Subject
+                            %select
+                              %option{:selected => "", :value => "na"} Choose One:
+                              %option{:value => "service"} General Customer Service
+                              %option{:value => "suggestions"} Suggestions
+                              %option{:value => "product"} Product Support
+                    .large-6.column
+                      %label
+                        Your Message
+                        %textarea{:placeholder => "Write here your message", :rows => "8"}
+                  .row
+                    .large-12.column
+                      %input.pull-right.tiny.button{:type => "submit"}/
+            .small-12.medium-3.large-3.columns
+              %div
+                %i.fa.fa-globe>
+                 Our office
+              %hr/
+              %address
+                %strong killer.tilapia Interactive, Inc.
+                %br
+                  99 Central Park West
+                  %br
+                    Manhattan, NYC 10024
+                    %br
+                      %abbr{:title => "Phone"}
+                        P:
+                      (123) 456-7890
+      /
+        \===========================================
+        END CONTACT SECTION
+        \===========================================
+      /
+        \===========================================
+        BEGIN FOOTER SECTION
+        \===========================================
+      %footer
+        .container
+          .row.text-center
+            .small-12.medium-4.large-6.columns
+              %h5 ABOUT US
+              %p
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+                vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio
+                dignissim qui blandit praesent luptatum zzril.
+                %br/
+                %a{:href => "#fakelink"} Read more
+            .small-12.medium-4.large-3.columns
+              %h5 MENUS
+              %ul
+                %li
+                  %a{:href => "#fakelink"} FAQ
+                %li
+                  %a{:href => "#fakelink"} Portfolio
+                %li
+                  %a{:href => "#fakelink"} White papers
+                %li
+                  %a{:href => "#fakelink"} Our Blog
+            .small-12.medium-4.large-3.columns
+              %h5 SUBSCRIBE
+              %p Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+              %form.form-subscribe{:method => "POST", :role => "form"}
+                .row.collapse
+                  .small-10.columns
+                    %input{:placeholder => "Email Address", :type => "text"}
+                  .small-2.columns
+                    %a.button.postfix{:href => "#"}
+                      %i.fa.fa-chevron-right
+        .footer
+          .container
+            \&copy; 2014
+            %a{:href => "#fakelink"} Company Name
+            %br/
+            %a{:href => "#fakelink"} AgencyNYC - Responsive Landing Template
+            design by
+            %a{:href => "#", :target => "_blank"} killer.tilapia
+            in Cagayan de Oro City,
+            %abbr{:title => "Philippines"} PH
+      /
+        \===========================================
+        END FOOTER SECTION
+        \===========================================
+      #back-top
+        %a{:href => "#top"}
+          %i.fa.fa-chevron-up
+    / Foundation Requirements
+    %script{:src => "assets/js/vendor/jquery.js"}
+    %script{:src => "assets/js/vendor/modernizr.js"}
+    %script{:src => "assets/js/vendor/fastclick.js"}
+    %script{:src => "assets/js/vendor/jquery.cookie.js"}
+    %script{:src => "assets/js/vendor/placeholder.js"}
+    %script{:src => "assets/js/foundation.min.js"}
+    / Landing Page Requirements
+    %script{:src => "assets/lib/jquery.throttle-debounce.js"}
+    %script{:src => "assets/lib/jquery.smooth-scroll.min.js"}
+    %script{:src => "assets/lib/parallax/jquery.parallax-1.1.3.js"}
+    %script{:src => "assets/lib/parallax/TweenMax.min.js"}
+    %script{:src => "assets/lib/parallax/jquery.superscrollorama.js"}
+    %script{:src => "assets/lib/jquery.backstretch.min.js"}
+    %script{:src => "assets/lib/jquery-scrollspy.js"}
+    %script{:src => "assets/lib/jquery.shuffle.js"}
+    %script{:src => "assets/lib/slick.min.js"}
+    %script{:src => "assets/js/agency-nyc.js"}
+    :javascript
+      $(document).foundation();
+
+      $.backstretch([
+          "assets/img/image001.jpg",
+          "assets/img/image002.jpg",
+          "assets/img/image003.jpg",
+          "assets/img/image004.jpg"
+      ], {
+          fade: 750,
+          duration: 6000
+      });

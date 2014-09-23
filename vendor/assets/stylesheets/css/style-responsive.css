@@ -1,0 +1,108 @@
+/*Large Desktop*/
+/*Desktop*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .portfolio-landing #portfolio-grid .picture-item {
+    height: 150px;
+  }
+  .portfolio-landing #portfolio-grid .picture-item:hover img {
+    margin-top: 60px;
+  }
+  .portfolio-landing #portfolio-grid .picture-item .overlay {
+    padding: 20px 10px;
+    height: 150px;
+    top: -150px;
+  }
+}
+/*Small desktop or tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .portfolio-landing .filter-options li {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .portfolio-landing .filter-options li:last-child {
+    width: 100%;
+  }
+  .portfolio-landing .filter-options li a {
+    margin-bottom: 0;
+  }
+  .portfolio-landing #portfolio-grid .picture-item {
+    width: 33.33333333333333%;
+    height: 155px;
+  }
+  .portfolio-landing #portfolio-grid .picture-item .overlay {
+    padding: 20px 10px;
+    height: 155px;
+    top: -155px;
+  }
+}
+/*Phone*/
+@media (max-width: 767px) {
+  .portfolio-landing .filter-options li {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .portfolio-landing .filter-options li:last-child {
+    width: 100%;
+  }
+  .portfolio-landing .filter-options li a {
+    margin-bottom: 0;
+  }
+  .portfolio-landing .button-group li {
+    margin-bottom: 0px;
+  }
+  .portfolio-landing #portfolio-grid .picture-item {
+    width: 50%;
+    height: 180px;
+  }
+  .portfolio-landing #portfolio-grid .picture-item .overlay {
+    padding: 25px 10px;
+    height: 180px;
+    top: -180px;
+  }
+}
+@media (max-width: 480px) {
+  .portfolio-landing .filter-options li {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .portfolio-landing .filter-options li:last-child {
+    width: 100%;
+  }
+  .portfolio-landing .filter-options li a {
+    margin-bottom: 0;
+  }
+  .portfolio-landing #portfolio-grid .picture-item {
+    width: 50%;
+    height: 150px;
+  }
+  .portfolio-landing #portfolio-grid .picture-item .overlay {
+    padding: 20px 10px;
+    height: 150px;
+    top: -150px;
+  }
+}
+@media (max-width: 360px) {
+  .portfolio-landing .filter-options li {
+    display: block;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .portfolio-landing .filter-options li:last-child {
+    width: 100% !important;
+  }
+  .portfolio-landing .filter-options li a {
+    margin-bottom: 0;
+  }
+  .portfolio-landing #portfolio-grid .picture-item {
+    width: 100%;
+    height: 180px;
+  }
+  .portfolio-landing #portfolio-grid .picture-item .overlay {
+    padding: 30px 10px;
+    height: 180px;
+    top: -180px;
+  }
+}

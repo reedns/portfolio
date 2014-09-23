@@ -1,0 +1,10 @@
+= form_for @article do |f|
+  = render 'shared/errors', object: @article
+  .actions.row
+    .large-6
+      = f.label :title
+      = f.text_field :title
+    .large-8
+      = f.label "Content"
+      = f.text_area :body, rows: 15
+    = f.submit 'Save', class: "button small radius"

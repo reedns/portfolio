@@ -8,15 +8,12 @@ class ArticlesController < ApplicationController
   def show
   end
 
-
   def new
     @article = Article.new
   end
 
-
   def edit
   end
-
 
   def create
     @article = Article.new(article_params)
@@ -54,11 +51,11 @@ class ArticlesController < ApplicationController
 
   private
 
-    def set_article
-      @article = Article.find(params[:id])
-    end
+  def set_article
+    @article = Article.find(params[:id])
+  end
 
-    def article_params
-      params.require(:article).permit(:title, :body)
-    end
+  def article_params
+    params.require(:article).permit(:title, :body)
+  end
 end
