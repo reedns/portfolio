@@ -25,3 +25,10 @@ class FeatureSpec < MiniTest::Spec
 end
 
 Capybara.ignore_hidden_elements = false
+
+def sign_in
+  visit new_user_session_path
+  fill_in "Email", with: users(:jimbo).email
+  fill_in "Password", with: 'password'
+  click_on "Log in"
+end

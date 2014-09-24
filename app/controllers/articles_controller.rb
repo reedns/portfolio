@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index
     @articles = Article.all
@@ -17,27 +18,20 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
+    current_user.articles << @article
 
-    respond_to do |format|
-      if @article.save
-        format.html { redirect_to @article, notice: 'Article was successfully created.' }
-        format.json { render :show, status: :created, location: @article }
-      else
-        format.html { render :new }
-        format.json { render json: @article.errors, status: :unprocessable_entity }
-      end
+    if @article.save
+      redirect_to @article, notice: 'Article was successfully created.'
+    else
+      render :new
     end
   end
 
   def update
-    respond_to do |format|
-      if @article.update(article_params)
-        format.html { redirect_to @article, notice: 'Article was successfully updated.' }
-        format.json { render :show, status: :ok, location: @article }
-      else
-        format.html { render :edit }
-        format.json { render json: @article.errors, status: :unprocessable_entity }
-      end
+    if @article.update(article_params)
+      redirect_to @article, notice: 'Article was successfully updated.'
+    else
+      render :edit
     end
   end
 
