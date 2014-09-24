@@ -4,8 +4,10 @@
   .large-10.column.right
     .panel.radius
       = @article.title
-      .divider
-        = @article.body
+      .br
+      = @article.body
+      .br
+      = @article.author.email
   .large-2.column
     %img(src="https://unsplash.imgix.net/reserve/aOcWqRTfQ12uwr3wWevA_14401305508_804b300054_o.jpg?q=75&fm=jpg&auto=format&s=badee9ec6f68a1be59bbaae87b7fe147")
 = link_to 'Edit', edit_article_path(@article)

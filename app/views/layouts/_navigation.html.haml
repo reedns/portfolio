@@ -4,21 +4,22 @@
       %ul.title-area
         %li.name
           %h1
-            %a{:href => "index.html"}
+            %a{:href => "#{root_path}"}
               %i.fa.fa-bullseye
-              AgencyNYC.
+              Reed Nelson-Saunders
         %li.toggle-topbar.menu-icon
           %a{:href => "#"}
             %span Menu
       %section#top-main-nav.top-bar-section.menus
         %ul.right.scroll-nav
           %li.active{"data-magellan-arrival" => "home"}
-            %a{:href => "#top"} Home
+            = link_to 'Blog', articles_path
           %li{"data-magellan-arrival" => "services"}
-            %a{:href => "#services"} Services
+            = link_to 'Projects', projects_path
           %li{"data-magellan-arrival" => "portfolio"}
-            %a{:href => "#portfolio"} Portfolio
+            = link_to 'Log In', login_path
           %li{"data-magellan-arrival" => "team"}
-            %a{:href => "#team"} Team
-          %li{"data-magellan-arrival" => "contact"}
-            %a{:href => "#contact"} Contact
+            = link_to 'Sign up', signup_path
+          - if user_signed_in?
+            %li{"data-magellan-arrival" => "team"}
+            = link_to 'Log out', logout_path
