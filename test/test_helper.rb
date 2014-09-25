@@ -1,5 +1,6 @@
 ENV['RAILS_ENV'] = 'test'
 puts Rails.env
+require 'coveralls'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'minitest/rails'
@@ -7,11 +8,12 @@ require 'minitest/rails/capybara'
 require 'minitest/pride'
 require 'capybara/poltergeist'
 
+Coveralls.wear!
+
 module ActiveSupport
   class TestCase
     ActiveRecord::Migration.check_pending!
     fixtures :all
-
     include Capybara::DSL
     Capybara.javascript_driver = :poltergeist
     Capybara.ignore_hidden_elements = false
