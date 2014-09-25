@@ -1,5 +1,5 @@
 ENV['RAILS_ENV'] = 'test'
-# puts Rails.env
+puts Rails.env
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 require 'minitest/rails'
@@ -24,3 +24,4 @@ def sign_in
   fill_in "Password", with: 'password'
   click_on "Log in"
 end
+
