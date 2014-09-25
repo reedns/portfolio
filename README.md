@@ -1,5 +1,7 @@
 [ ![Codeship Status for reedns/portfolio](https://www.codeship.io/projects/8e803df0-2716-0132-f01f-2a710ae03187/status)](https://www.codeship.io/projects/37655)
 
+[![Coverage Status](https://img.shields.io/coveralls/reedns/portfolio.svg)](https://coveralls.io/r/reedns/portfolio)
+
 Portfolio
 
 This is an project for CodeFellows Ruby on Rails Dev Accelerator.  The app displays a blog and projects that I have created.

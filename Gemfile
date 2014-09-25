@@ -16,6 +16,7 @@ gem 'pg'
 gem 'figaro'
 gem 'haml-rails'
 gem 'devise'
+gem 'coveralls', require: false
 
 group :development do
   gem 'quiet_assets'
