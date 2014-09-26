@@ -13,4 +13,5 @@ draft:
 maria_draft:
   title: Maria's draft
   body: This article is written by Maria
+  author: maria
   published: false

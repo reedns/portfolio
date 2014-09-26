@@ -15,4 +15,8 @@ class ArticlePolicy < ApplicationPolicy
   def publish?
     user.editor?
   end
+
+  def update?
+    user.editor? || user.author? if user
+  end
 end
