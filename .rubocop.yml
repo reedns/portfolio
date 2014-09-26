@@ -1,7 +1,7 @@
 Documentation:
   Enabled: false
 LineLength:
-  Max: 80
+  Max: 120
 
 AllCops:
   RunRailsCops: true
