@@ -6,7 +6,7 @@ feature 'editing an article' do
 
     visit edit_article_path(articles(:article))
     fill_in 'Title', with: 'New Title'
-    click_button 'Save'
+    click_button 'Update Article'
     page.must_have_content 'New Title'
   end
 end

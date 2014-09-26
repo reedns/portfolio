@@ -12,10 +12,3 @@ test:
   database: portfolio_development
   pool: 5
   username: reedns
-
-# test:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: travis_ci_test
-#   pool: 5
-#   username: postgres

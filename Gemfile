@@ -17,6 +17,7 @@ gem 'figaro'
 gem 'haml-rails'
 gem 'devise'
 gem 'coveralls', require: false
+gem 'pundit'
 
 group :development do
   gem 'quiet_assets'

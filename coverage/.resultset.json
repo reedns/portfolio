@@ -1,0 +1,42 @@
+{
+  "MiniTest": {
+    "coverage": {
+      "/Users/reedns/projects/portfolio/app/models/article.rb": [
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/reedns/projects/portfolio/app/models/project.rb": [
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1411757379
+  },
+  "Unit Tests": {
+    "coverage": {
+      "/Users/reedns/projects/portfolio/app/models/article.rb": [
+        1,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/reedns/projects/portfolio/app/models/project.rb": [
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1411757571
+  }
+}
