@@ -6,8 +6,9 @@
         %p Title: #{ link_to article.title, article_path(article) }
         - if policy(article).update?
           = link_to 'Edit', edit_article_path(article)
-        \|
-        = link_to 'Destroy', article, method: :delete, data: { :confirm => 'Are you sure?' }
+        -if policy(article).destroy?
+          \|
+          = link_to 'Destroy', article, method: :delete, data: { :confirm => 'Are you sure?' }
     .large-3.columns
       %ul.side-nav
         .panel.radius

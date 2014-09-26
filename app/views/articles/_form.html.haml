@@ -7,7 +7,7 @@
     .small-8.columns
       = f.label "Content"
       = f.text_area :body, rows: 15
-    - if ArticlePolicy.new(current_user, @article).publish?
+    - if policy(@article).publish?
       .small-3.columns
         = f.label :published, class: 'right-inline', title: 'Is this article published?', data: {tooltip: true}
         = f.check_box :published

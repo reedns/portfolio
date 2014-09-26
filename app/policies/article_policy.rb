@@ -19,4 +19,8 @@ class ArticlePolicy < ApplicationPolicy
   def update?
     user.editor? || user.author? if user
   end
+
+  def destroy?
+    user.editor? if user
+  end
 end
