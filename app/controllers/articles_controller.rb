@@ -19,6 +19,7 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     current_user.articles << @article
+    authorize @article
 
     if @article.save
       redirect_to @article, notice: 'Article was successfully created.'

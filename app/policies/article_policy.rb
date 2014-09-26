@@ -23,4 +23,8 @@ class ArticlePolicy < ApplicationPolicy
   def destroy?
     user.editor? if user
   end
+
+  def create?
+    user.editor? || user.author? if user
+  end
 end
