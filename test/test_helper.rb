@@ -5,23 +5,15 @@ require 'rails/test_help'
 require 'minitest/rails'
 require 'minitest/rails/capybara'
 require 'minitest/pride'
+require 'capybara/poltergeist'
 
-class ActiveSupport::TestCase
-  ActiveRecord::Migration.check_pending!
+module ActiveSupport
+  class TestCase
+    ActiveRecord::Migration.check_pending!
+    fixtures :all
 
-  # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.
-  #
-  # Note: You'll currently still have to declare fixtures explicitly in integration tests
-  # -- they do not yet inherit this setting
-  fixtures :all
-  # Add more helper methods to be used by all tests here...
+    include Capybara::DSL
+    Capybara.javascript_driver = :poltergeist
+    Capybara.ignore_hidden_elements = false
+  end
 end
-
-class FeatureSpec < MiniTest::Spec
-  require 'capybara/poltergeist'
-  include Capybara::DSL
-  Capybara.javascript_driver = :poltergeist
-  register_spec_type(/page$/, self)
-end
-
-Capybara.ignore_hidden_elements = false

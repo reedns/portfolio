@@ -1,4 +1,4 @@
-require "test_helper"
+require 'test_helper'
 
 feature 'As a site visitor I want to see specific project' do
   scenario 'Viewing a single project' do

@@ -5,7 +5,7 @@ feature 'As the site owner, I want to edit a portfolio item so that I can update
     visit projects_path
     click_on_edit_link
 
-    fill_in 'Name', with: "New Project"
+    fill_in 'Name', with: 'New Project'
     click_button 'Save'
 
     page.must_have_content 'New Project'
