@@ -1,15 +1,17 @@
+<<<<<<< HEAD
 #header-landing{"data-magellan-destination" => "home"}
   .fixed.sticky
-    %nav#nav-menu.top-bar{"data-magellan-expedition" => "fixed", "data-topbar" => "", :role => "navigation"}
-      %ul.title-area
-        %li.name
-          %h1
-            %a{:href => "#{root_path}"}
-              %i.fa.fa-bullseye
-              Reed Nelson-Saunders
-        %li.toggle-topbar.menu-icon
-          %a{:href => "#"}
-            %span Menu
+   %nav.top-bar{"data-topbar" => true}
+  .top-bar-section
+    %ul.title-area
+      %li.name
+        %h1
+          %a{:href => "index.html"}
+            %i.fa.fa-bullseye
+            = link_to "Reed's Portfolio", root_path
+      %li.toggle-topbar.menu-icon
+        %a{:href => "#"}
+    = render 'layouts/navigation_links'
       %section#top-main-nav.top-bar-section.menus
         %ul.right.scroll-nav
           %li.active{"data-magellan-arrival" => "home"}
