@@ -1,4 +1,4 @@
-require "test_helper"
+require 'test_helper'
 
 feature 'As the site visitor, I want to be able sign into the site so that I can
 take actions that require authentication' do

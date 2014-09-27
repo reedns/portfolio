@@ -9,7 +9,7 @@ feature 'creating an article' do
     click_button 'Create Article'
 
     page.must_have_content(articles(:article).body)
-    page.has_css? "#author"
+    page.has_css? '#author'
     page.must_have_content 'Status: Unpublished'
   end
 

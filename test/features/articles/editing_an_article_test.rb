@@ -9,7 +9,6 @@ feature 'editing an article' do
     page.wont_have_content articles(:article).title
   end
 
-
   scenario 'author can edit their own blog article' do
     sign_in(:author)
 

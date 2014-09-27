@@ -1,5 +1,4 @@
 class ArticlePolicy < ApplicationPolicy
-
   class Scope < Scope
     def resolve
       if user.nil?

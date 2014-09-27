@@ -1,4 +1,4 @@
-require "test_helper"
+require 'test_helper'
 
 feature 'As the site owner, I want to sign out a user to prevent fraud' do
   scenario 'a user signs in and signs out' do

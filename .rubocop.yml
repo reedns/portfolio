@@ -10,5 +10,6 @@ AllCops:
   Exclude:
     - bin/*
     - db/migrations
+    - db/migrate/*
     - db/schema.rb
     - vendor/**/*
