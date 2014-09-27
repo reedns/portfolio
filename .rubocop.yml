@@ -1,0 +1,14 @@
+Documentation:
+  Enabled: false
+LineLength:
+  Max: 80
+
+AllCops:
+  RunRailsCops: true
+  Include:
+    - lib/tasks/*
+  Exclude:
+    - bin/*
+    - db/migrations
+    - db/schema.rb
+    - vendor/**/*

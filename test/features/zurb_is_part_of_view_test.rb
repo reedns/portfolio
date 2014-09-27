@@ -1,8 +1,8 @@
 require 'test_helper'
 
 feature 'displaying page styling from zurb foundation' do
-  scenario 'user visits welcome page' do
-    visit root_path
-    page.must_have_css 'script[src="/assets/vendor/modernizr.js"]'
+  scenario 'user visits articles index' do
+    visit articles_path
+    page.find "div[class='small-9 columns']"
   end
 end
