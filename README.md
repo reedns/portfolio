@@ -4,7 +4,7 @@
 
 Portfolio
 
-This is an project for CodeFellows Ruby on Rails Dev Accelerator.  The app displays a blog and projects that I have created.
+This is an project for CodeFellows Ruby on Rails Dev Accelerator.  The app displays a blog and projects that I have created.  Using Devise I have implemented authentication.  Using the Pundit Gem I have set authorization for general site visitors, article authors and article editors.
 
 Methodology:
 
@@ -13,9 +13,4 @@ You can see the user stories that have been used so far on the issues page in th
 
 
 
-![welcome](https://www.dropbox.com/s/cxh9020xms69xdw/Screenshot%202014-09-23%2012.07.39.png)
-
-Screenshot of the articles index:
-
-![index](http://prntscr.com/4nupa6)
 
