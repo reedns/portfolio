@@ -1,10 +1,15 @@
 = form_for @article do |f|
   = render 'shared/errors', object: @article
   .actions.row
-    .large-6
+    .small-6.columns
       = f.label :title
       = f.text_field :title
-    .large-8
+    .small-8.columns
       = f.label "Content"
       = f.text_area :body, rows: 15
-    = f.submit 'Save', class: "button small radius"
+    - if policy(@article).publish?
+      .small-3.columns
+        = f.label :published, class: 'right-inline', title: 'Is this article published?', data: {tooltip: true}
+        = f.check_box :published
+  .field
+    = f.submit @article.new_record? ? 'Create Article' : 'Update Article', class: "button small radius"

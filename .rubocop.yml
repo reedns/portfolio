@@ -1,7 +1,7 @@
 Documentation:
   Enabled: false
 LineLength:
-  Max: 80
+  Max: 120
 
 AllCops:
   RunRailsCops: true
@@ -10,5 +10,6 @@ AllCops:
   Exclude:
     - bin/*
     - db/migrations
+    - db/migrate/*
     - db/schema.rb
     - vendor/**/*

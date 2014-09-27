@@ -1,3 +1,17 @@
 article:
   title: Rails
   body: Rails rocks!
+  author: maria
+  published: true
+
+draft:
+  title: New post
+  body: I have some new stuff to share!
+  author: author
+  published: false
+
+maria_draft:
+  title: Maria's draft
+  body: This article is written by Maria
+  author: maria
+  published: false
