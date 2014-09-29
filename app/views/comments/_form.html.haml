@@ -1,0 +1,18 @@
+= form_for [@article, @comment] do |f|
+  = render 'shared/errors', object: @comment
+  .actions.row
+    .small-6.columns
+      = f.label :author
+      = f.text_field :author
+    .small-6.columns
+      = f.label :author_email
+      = f.email_field :author_email
+    .small-6.columns
+      = f.label :content, rows: 8
+      = f.text_area :content
+    .small-3.columns
+      = f.label :approved, class: 'right-inline',
+      title: 'Is this comment approved?', data: {tooltip: true}
+      = f.check_box :approved
+    .field
+      = f.submit 'Create comment', class: 'btn'

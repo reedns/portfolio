@@ -21,5 +21,6 @@ feature 'deleting an article' do
 end
 
 def delete_article
-  find("a[data-method='delete'][href='/articles/#{articles(:article).id}']").click
+  find("a[data-method='delete']
+    [href='/articles/#{articles(:article).id}']").click
 end

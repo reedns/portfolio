@@ -15,3 +15,9 @@
 = link_to 'Back', articles_path
 
 %p.status= "Status: #{@article.published? ? 'Published' : 'Unpublished'}"
+
+= render 'comments/form'
+
+= @article.comments.each do |comment|
+  = comment.content
+  %p by #{comment.author}
