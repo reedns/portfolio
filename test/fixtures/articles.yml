@@ -4,6 +4,12 @@ article:
   author: maria
   published: true
 
+author_article:
+  title: Author post
+  body: Here is some new stuff
+  author: author
+  published: true
+
 draft:
   title: New post
   body: I have some new stuff to share!

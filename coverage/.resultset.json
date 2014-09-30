@@ -4,20 +4,22 @@
       "/Users/reedns/projects/portfolio/app/models/article.rb": [
         1,
         1,
-        null,
         1,
-        0,
-        0,
-        null,
+        null
+      ],
+      "/Users/reedns/projects/portfolio/app/models/comment.rb": [
+        1,
+        1,
         null
       ],
       "/Users/reedns/projects/portfolio/app/models/project.rb": [
         1,
         1,
+        1,
         null
       ]
     },
-    "timestamp": 1411780350
+    "timestamp": 1412093807
   },
   "Unit Tests": {
     "coverage": {
@@ -39,6 +41,6 @@
         null
       ]
     },
-    "timestamp": 1412029714
+    "timestamp": 1412110823
   }
 }

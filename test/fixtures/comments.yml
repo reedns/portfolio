@@ -3,3 +3,10 @@ comment:
   approved: false
   author: Sally Johnson
   author_email: sally@test.com
+
+comment_2:
+  content: This is a good article!
+  approved: false
+  author: John Johnson
+  author_email: john@test.com
+

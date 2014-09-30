@@ -18,8 +18,10 @@ gem 'haml-rails'
 gem 'devise'
 gem 'coveralls', require: false
 gem 'pundit'
+gem 'omniauth-twitter'
 
 group :development do
+  gem 'pry-rails'
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'spring'

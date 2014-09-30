@@ -1,13 +1,12 @@
 class ArticlePolicy < ApplicationPolicy
-
   class Scope < Scope
     def resolve
-      if user.nil?
-        scope.where(published: true)
-      elsif user.editor?
+      if user.editor?
         scope.all
       elsif user.author?
         scope.where(author: user)
+      else
+        scope.where(published: true)
       end
     end
   end
@@ -17,14 +16,14 @@ class ArticlePolicy < ApplicationPolicy
   end
 
   def update?
-    user.editor? || user.author? if user
+    user.editor? || user.author?
   end
 
   def destroy?
-    user.editor? if user
+    user.editor?
   end
 
   def create?
-    user.editor? || user.author? if user
+    user.editor? || user.author?
   end
 end
