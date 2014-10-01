@@ -5,20 +5,24 @@
 # below each fixture, per the syntax in the comments below
 #
 jimbo:
+  username: jimbo
   email: jimbo@example.com
   encrypted_password: <%= User.new.send(:password_digest, 'password') %>
 
 maria:
+  username: maria
   email: maria@example.com
   encrypted_password: <%= User.new.send(:password_digest, 'password') %>
   role: author
 
 author:
+  username: author
   email: author@example.com
   encrypted_password: <%= User.new.send(:password_digest, 'password') %>
   role: author
 
 editor:
+  username: editor
   email: editor@example.com
   encrypted_password: <%= User.new.send(:password_digest, 'password') %>
   role: editor

@@ -18,7 +18,7 @@
 
 = render 'comments/form'
 
-= policy_scope(@article.comments).each do |comment|
-  = link_to 'Approve Comment', article_comment_path(@article, comment, comment: { approved: true }), method: :patch unless comment.approved
+- policy_scope(@article.comments).each do |comment|
+  = button_to 'Approve Comment', article_comment_path(@article, comment, comment: { approved: true }), method: :patch unless comment.approved
   = comment.content
   %p by #{comment.author}

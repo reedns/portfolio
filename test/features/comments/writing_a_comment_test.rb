@@ -32,5 +32,5 @@ end
 
 def approve_comment
   visit article_path(articles(:article))
-  click_link 'Approve'
+  click_button 'Approve'
 end

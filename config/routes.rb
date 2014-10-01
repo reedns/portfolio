@@ -7,10 +7,10 @@ Rails.application.routes.draw do
     get 'signup', to: 'devise/registrations#new'
   end
 
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
 
   resources :articles do
-    resources :comments
+    resources :comments, only: [:create, :update]
   end
 
   resources :projects
