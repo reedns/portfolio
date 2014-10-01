@@ -41,7 +41,6 @@ class ArticlesController < ApplicationController
     authorize @article
     @article.destroy
     redirect_to articles_url, notice: 'Article was successfully destroyed.'
-    head :no_content
   end
 
   private
