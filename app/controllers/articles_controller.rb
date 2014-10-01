@@ -40,10 +40,8 @@ class ArticlesController < ApplicationController
   def destroy
     authorize @article
     @article.destroy
-    respond_to do |format|
-      format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    redirect_to articles_url, notice: 'Article was successfully destroyed.'
+    head :no_content
   end
 
   private
@@ -53,6 +51,8 @@ class ArticlesController < ApplicationController
   end
 
   def article_params
-    params.require(:article).permit(:title, :body, (:published if current_user.role == 'editor'))
+    params.require(:article).permit(:title, :body, (
+                                    :published if current_user.role == 'editor'
+                                    ))
   end
 end

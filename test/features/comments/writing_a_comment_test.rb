@@ -26,8 +26,6 @@ feature 'creating a comment' do
     approve_comment
     page.must_have_content 'Comment approved!'
   end
-
-
 end
 
 def approve_comment

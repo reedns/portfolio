@@ -5,7 +5,7 @@ class CommentsController < ApplicationController
     @comment = @article.comments.build(comment_params)
 
     if @comment.save
-      flash[:notice] = "Comment created! Approval pending."
+      flash[:notice] = 'Comment created! Approval pending.'
       redirect_to article_path(@article)
     else
       render 'posts/show'
