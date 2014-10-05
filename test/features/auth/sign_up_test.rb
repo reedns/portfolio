@@ -7,7 +7,7 @@ take actions that require authentication' do
     fill_in 'Email', with: 'sally@example.com'
     fill_in 'Password', with: 'password'
     click_button 'Sign up'
-    page.must_have_content 'Welcome'
+    page.must_have_content 'Log out'
   end
 
   scenario 'sign in with twitter works' do
