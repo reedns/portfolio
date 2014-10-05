@@ -13,17 +13,20 @@ gem 'uglifier', '>= 1.3.0'
 gem 'rubocop'
 gem 'foundation-rails', '5.4.0'
 gem 'pg'
-gem 'figaro'
 gem 'haml-rails'
+gem 'figaro'
 gem 'devise'
 gem 'coveralls', require: false
 gem 'pundit'
+gem 'omniauth-twitter'
 
 group :development do
+  gem 'pry-rails'
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'spring'
   gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :production do

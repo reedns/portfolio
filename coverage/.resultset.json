@@ -4,6 +4,12 @@
       "/Users/reedns/projects/portfolio/app/models/article.rb": [
         1,
         1,
+        1,
+        null
+      ],
+      "/Users/reedns/projects/portfolio/app/models/comment.rb": [
+        1,
+        1,
         null
       ],
       "/Users/reedns/projects/portfolio/app/models/project.rb": [
@@ -13,26 +19,28 @@
         null
       ]
     },
-    "timestamp": 1411838825
+    "timestamp": 1412123799
   },
   "Unit Tests": {
     "coverage": {
       "/Users/reedns/projects/portfolio/app/models/article.rb": [
         1,
         1,
-        null,
         1,
-        0,
-        0,
-        null,
+        null
+      ],
+      "/Users/reedns/projects/portfolio/app/models/comment.rb": [
+        1,
+        1,
         null
       ],
       "/Users/reedns/projects/portfolio/app/models/project.rb": [
         1,
         1,
+        1,
         null
       ]
     },
-    "timestamp": 1411770487
+    "timestamp": 1412120342
   }
 }

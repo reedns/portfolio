@@ -13,7 +13,7 @@ feature 'editing an article' do
     sign_in(:author)
 
     visit articles_path
-    click_link 'Edit'
+    find("a[href='/articles/#{articles(:draft).id}/edit']").click
     edit_article
     page.must_have_content 'New Title'
   end

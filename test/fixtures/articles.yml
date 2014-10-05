@@ -1,7 +1,13 @@
 article:
   title: Rails
-  body: Rails rocks!
+  body: This rocks!
   author: maria
+  published: true
+
+author_article:
+  title: Author post
+  body: Here is some new stuff
+  author: author
   published: true
 
 draft:

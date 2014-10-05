@@ -16,10 +16,11 @@ feature 'deleting an article' do
     sign_in(:editor)
     visit articles_path
     delete_article
-    page.wont_have_content('Cool Post')
+    page.wont_have_content articles(:article).title
   end
 end
 
 def delete_article
-  find("a[data-method='delete'][href='/articles/#{articles(:article).id}']").click
+  find("a[data-method='delete']
+    [href='/articles/#{articles(:article).id}']").click
 end

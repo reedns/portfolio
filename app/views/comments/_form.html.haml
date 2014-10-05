@@ -1,0 +1,14 @@
+= form_for [@article, @comment] do |f|
+  = render 'shared/errors', object: @comment
+  .actions.row
+    .small-6.columns
+      = f.label :author
+      = f.text_field :author
+    .small-6.columns
+      = f.label :author_email
+      = f.email_field :author_email
+    .small-6.columns
+      = f.label :content, rows: 8
+      = f.text_area :content
+    .small-6.columns
+      = f.submit 'Create comment', class: 'btn'

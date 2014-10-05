@@ -7,6 +7,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    @comment = @article.comments.build
   end
 
   def new
@@ -19,7 +20,6 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     current_user.articles << @article
-    authorize @article
 
     if @article.save
       redirect_to @article, notice: 'Article was successfully created.'
@@ -38,11 +38,9 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
+    authorize @article
     @article.destroy
-    respond_to do |format|
-      format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    redirect_to articles_url, notice: 'Article was successfully destroyed.'
   end
 
   private
@@ -52,6 +50,8 @@ class ArticlesController < ApplicationController
   end
 
   def article_params
-    params.require(:article).permit(:title, :body, (:published if current_user.role == 'editor'))
+    params.require(:article).permit(:title, :body, (
+                                    :published if current_user.role == 'editor'
+                                    ))
   end
 end
