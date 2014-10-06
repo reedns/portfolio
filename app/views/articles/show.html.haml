@@ -1,5 +1,5 @@
 .row
-  .large-9.columns{:role => "content"}
+  .large-12.columns{:role => "content"}
     %h1 Blog
     %br/
     %article
@@ -9,8 +9,8 @@
         Written by
         = @article.author.email
       .row
-        .large-6.columns
-          %p= @article.body
+        .large-12.columns
+          %p= simple_format @article.body
     %hr/
 .row
   .large-9.columns
