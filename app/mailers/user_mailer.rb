@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
     @contact = contact
 
     mail(
-        from: email,
+        from: contact.email,
         to: 'reedness3000@gmail.com',
         subject: 'Contact request'
       )
