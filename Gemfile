@@ -19,6 +19,8 @@ gem 'devise'
 gem 'coveralls', require: false
 gem 'pundit'
 gem 'omniauth-twitter'
+gem 'sucker_punch'
+gem 'unicorn'
 
 group :development do
   gem 'pry-rails'
