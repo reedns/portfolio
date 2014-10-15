@@ -1,8 +1,6 @@
 class UserMailer < ActionMailer::Base
-  def contact_me_email(name, email, message)
-    @name = name
-    @email = email
-    @mesage = message
+  def contact_me_email(contact)
+    @contact = contact
 
     mail(
         from: email,
