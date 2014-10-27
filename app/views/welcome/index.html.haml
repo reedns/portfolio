@@ -1,2 +1,12 @@
 %h2 Welcome to Reed's Page!
- 
+
+%h3 Contact Me
+.actions.row
+  = form_for @contact do |f|
+    = f.label :name
+    = f.text_field :name
+    = f.label :email
+    = f.text_field :email
+    = f.label :message
+    = f.text_area :message, rows: 8
+    = f.submit

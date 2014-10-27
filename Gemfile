@@ -19,6 +19,8 @@ gem 'devise'
 gem 'coveralls', require: false
 gem 'pundit'
 gem 'omniauth-twitter'
+gem 'sucker_punch'
+gem 'unicorn'
 
 group :development do
   gem 'pry-rails'
@@ -27,6 +29,7 @@ group :development do
   gem 'spring'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'letter_opener'
 end
 
 group :production do
