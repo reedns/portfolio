@@ -14,10 +14,10 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(project_params)
-    if @project.save
-      redirect_to project_path(@project), notice: 'Success! New project created'
-    else
-      render :new
+    respond_to do |format|
+      if @project.save
+        format.js
+      end
     end
   end
 
@@ -25,18 +25,18 @@ class ProjectsController < ApplicationController
   end
 
   def update
-    @project.update(project_params)
-    if @project.save
-      redirect_to project_path(@project), notice: 'Success! Project updated.'
-    else
-      render :edit
+    respond_to do |format|
+      if @project.update(project_params)
+        format.js
+      end
     end
   end
 
   def destroy
     @project.destroy
-    flash[:notice] = 'Success! Project deleted.'
-    redirect_to projects_path
+    respond_to do |format|
+      format.js
+    end
   end
 
   private
