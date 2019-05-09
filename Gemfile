@@ -21,6 +21,7 @@ gem 'pundit'
 gem 'omniauth-twitter'
 gem 'sucker_punch'
 gem 'unicorn'
+gem 'jquery-turbolinks'
 
 group :development do
   gem 'pry-rails'

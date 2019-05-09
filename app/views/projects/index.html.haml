@@ -1,16 +1,6 @@
-%h1 Blog
-- @projects.each do |project|
-  .row
-    .small-9.columns
-      .panel.radius
-        %h3 Name: #{ link_to project.name, project_path(project) }
-        %p= project.technologies_used
-        = link_to 'Show', project_path(project)
-        \|
-        = link_to 'Edit', edit_project_path(project)
-        \|
-        = link_to 'Destroy', project_path(project), method: :delete, data: { :confirm => 'Are you sure?' }
-
+%h1 Projects
+.container
+  = render @projects
 %br
 
-= link_to 'New Project', new_project_path
+= link_to 'New Project', new_project_path, id: "new_project_link", remote: true
